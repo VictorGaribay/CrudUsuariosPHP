@@ -57,7 +57,7 @@ background-size: cover;">
     <center>
         <ul class="pagination" id="pagination"></ul>
     </center>
-    <!-- MODAL PARA EL REGISTRO DE PRODUCTOS-->
+    <!-- MODAL PARA EL REGISTRO DE usuarios-->
     <div class="modal fade" id="registra-usuario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">

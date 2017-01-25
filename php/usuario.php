@@ -45,28 +45,26 @@ $pdf->Cell(20, 8, 'estado', 0);
 $pdf->Ln(8);
 $pdf->SetFont('Arial', '', 8);
 //CONSULTA
-$productos = mysql_query("SELECT * FROM usuarios WHERE fecha_tramite BETWEEN '$desde' AND '$hasta' ");
+$usuarios = mysql_query("SELECT * FROM usuarios WHERE fecha_tramite BETWEEN '$desde' AND '$hasta' ");
 $item = 0;
 $totaluni = 0;
 $totaldis = 0;
-while($productos2 = mysql_fetch_array($productos)){
+while($usuarios2 = mysql_fetch_array($usuarios)){
 	$item = $item+1;
-#	$totaluni = $totaluni + $productos2['precio_unit'];
-#	$totaldis = $totaldis + $productos2['precio_dist'];
+#	
 	$pdf->Cell(8, 8, $item, 0);
-	$pdf->Cell(25, 8,$productos2['dni'], 0);
-	$pdf->Cell(30, 8, $productos2['nombres'], 0);
-	$pdf->Cell(30, 8, $productos2['apellidos'], 0);
-	$pdf->Cell(25, 8, date('d/m/y', strtotime($productos2['fecha_tramite'])), 0);
-	$pdf->Cell(20, 8, $productos2['nivel'], 0);
-	$pdf->Cell(20, 8, $productos2['estado'], 0);
+	$pdf->Cell(25, 8,$usuarios2['dni'], 0);
+	$pdf->Cell(30, 8, $usuarios2['nombres'], 0);
+	$pdf->Cell(30, 8, $usuarios2['apellidos'], 0);
+	$pdf->Cell(25, 8, date('d/m/y', strtotime($usuarios2['fecha_tramite'])), 0);
+	$pdf->Cell(20, 8, $usuarios2['nivel'], 0);
+	$pdf->Cell(20, 8, $usuarios2['estado'], 0);
 	
 	$pdf->Ln(8);
 }
 $pdf->SetFont('Arial', 'B', 8);
 $pdf->Cell(104,8,'',0);
-#$pdf->Cell(31,8,'Total Unitario: S/. '.$totaluni,0);
-#$pdf->Cell(32,8,'Total Dist: S/. '.$totaldis,0);
+
 
 $pdf->Output('reporte.pdf','D');
 

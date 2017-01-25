@@ -3,7 +3,7 @@ include('conexion.php');
 
 $id = $_POST['id'];
 
-//OBTENEMOS LOS VALORES DEL PRODUCTO
+//OBTENEMOS LOS VALORES DEL USUARIO
 
 
  

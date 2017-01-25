@@ -34,7 +34,7 @@ if(mysql_num_rows($registro)>0){
             
              
               
-              <td align="center" bgcolor= "#90EE90" ><a href="javascript:editarProducto('.$registro2['id_usarios'].');" class="glyphicon glyphicon-refresh"></a>&nbsp <a href="javascript:eliminarProducto('.$registro2['id_usarios'].');" class="glyphicon glyphicon-remove-circle"></a></td>
+              <td align="center" bgcolor= "#90EE90" ><a href="javascript:editarUsuario('.$registro2['id_usarios'].');" class="glyphicon glyphicon-refresh"></a>&nbsp <a href="javascript:eliminarUsuario('.$registro2['id_usarios'].');" class="glyphicon glyphicon-remove-circle"></a></td>
               </tr>';
 	}
 }else{
