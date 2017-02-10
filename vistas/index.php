@@ -65,7 +65,7 @@ background-size: cover;">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
               <h4 class="modal-title" id="myModalLabel"><b>Registra o Edita un Usuario</b></h4>
             </div>
-            <form id="formulario" class="formulario" onsubmit="return agregaRegistro();" >
+            <form id="formulario" class="formulario" onsubmit="return agregaRegistro();"  >
             <div class="modal-body">
                 <table border="0" width="100%">
                      <tr>
@@ -73,11 +73,11 @@ background-size: cover;">
                     </tr>
                      <tr>
                         <td width="150">Proceso: </td>
-                        <td><input type="text" required="required" readonly="readonly" id="pro" name="pro"/></td>
+                        <td><input type="text" required="required" readonly="readonly" id="pro" name="pro" value="Registro" /></td>
                     </tr>
                     <tr>
                         <td>DNI: </td>
-                        <td><input type="text" required="required" name="dni" id="DNI" maxlength="100"/></td>
+                        <td><input type="number" required="required" name="dni" id="DNI" maxlength="100"/></td>
                     </tr>
 
                     <tr>
@@ -125,7 +125,7 @@ background-size: cover;">
             </div>
             
             <div class="modal-footer">
-                <input type="submit" value="Registrar" class="btn btn-success" id="reg" />
+                <input type="submit" value="Registrar" class="btn btn-success" id="reg"    />
                 <input type="submit" value="Editar" class="btn btn-warning"  id="edi"/>
             </div>
             </form>

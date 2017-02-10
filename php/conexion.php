@@ -1,5 +1,5 @@
 <?php
-mysql_connect('localhost','root','@llujered4');
+mysql_connect('localhost','administrador','skapunker1424');
 
 
 
@@ -15,7 +15,7 @@ function fechaNormal($fecha){
 
 
 
-$mysqli = new MySQLi("localhost", "root","@llujered4", "brevetes");
+$mysqli = new MySQLi("localhost", "administrador","skapunker1424", "brevetes");
 		if ($mysqli -> connect_errno) {
 			die( "Fallo la conexión a MySQL: (" . $mysqli -> mysqli_connect_errno() 
 				. ") " . $mysqli -> mysqli_connect_error());
